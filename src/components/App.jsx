@@ -7,7 +7,7 @@ function App() {
 
 
     useEffect(() => {
-        const socket = io('http://testing-socket-io-backend-production.up.railway.app/');
+        const socket = io('https://testing-socket-io-backend-production.up.railway.app/');
         socket.on('init', (json) => {
             console.log(json);
             setOnlineCount(json.count);  
